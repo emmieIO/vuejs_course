@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Basics</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="app" class="container">
+        <h1 class="text-3xl font-bold">{{pageTitle}}</h1>
+        <p>The wonderful world of vue</p>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script>
+        Vue.createApp({
+            data(){
+                return {
+                    pageTitle: "Vue Basics"
+                }
+            }
+        }).mount("#app")
+    </script>
+</body>
+</html>
